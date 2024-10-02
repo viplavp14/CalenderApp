@@ -1,0 +1,67 @@
+/* Spacing adjustments for the button group */
+.filter-buttons {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Margin for buttons */
+.filter-buttons .btn {
+    margin: 5px;
+}
+
+/* Style for the "All" button */
+.filter-buttons .btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+}
+
+.filter-buttons .btn-warning:hover {
+    background-color: #ec971f;
+}
+
+/* Style for the outline buttons */
+.filter-buttons .btn-outline-secondary {
+    border: 1px solid #ddd;
+}
+
+.filter-buttons .btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* Make buttons full width on smaller screens */
+    .filter-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .filter-buttons .btn {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    /* Reduce padding and margin for small screen */
+    .filter-buttons .btn-warning, 
+    .filter-buttons .btn-outline-secondary {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Make buttons stack vertically */
+    .filter-buttons .btn {
+        flex: 1 1 auto;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 0.85rem;
+    }
+
+    .filter-buttons .btn-warning, 
+    .filter-buttons .btn-outline-secondary {
+        padding: 8px 5px;
+        font-size: 0.8rem;
+    }
+}

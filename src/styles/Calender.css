@@ -1,0 +1,64 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.calendar-header {
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.view-options {
+  padding: 15px;
+}
+
+.music-playlist {
+  margin-top: 10px;
+}
+
+.music-playlist .form-check {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.calendar-header .btn,
+.music-playlist .form-check,
+.schedule-tags .tag {
+  width: 100%;
+}
+
+.schedule-tags {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 10px;
+}
+
+.schedule-tags .tag {
+  margin: 5px;
+  font-size: 0.85rem; 
+  padding: 6px 12px; 
+  flex: 0 0 calc(25% - 10px); 
+}
+
+.arrow-box {
+  border: 1px solid #dee2e6; 
+  padding: 6px; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa; 
+  cursor: pointer; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .schedule-tags .tag {
+    flex: 0 0 calc(50% - 10px); /* 2 per row on smaller screens */
+  }
+
+  .calendar-header .btn,
+  .music-playlist .form-check {
+    width: auto; /* Allow auto width for buttons on smaller screens */
+  }
+}
